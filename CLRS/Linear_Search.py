@@ -1,5 +1,5 @@
 """
-Linear Search with loop invariants
+Linear Search with Loop Invariants
 """
 
 def linear_search(array, v):

@@ -1,4 +1,7 @@
-# An really cool image translation program
+# This is right now a cool image translations program
+# I remember making something like this myself back in the early days of college
+# I'm thinking about using something like this for the basis of a GAN network
+
 from PIL import Image
 
 

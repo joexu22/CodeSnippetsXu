@@ -95,7 +95,7 @@ for alien in aliens[0:1]:
 	
 # showing first 5 aliens
 for alien in aliens[:5]:
-	print alien
+	print(alien)
 print("...")
 
 
