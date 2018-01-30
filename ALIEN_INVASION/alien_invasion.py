@@ -1,6 +1,7 @@
 # working through a Python3 game
 # alien invasion
 import pygame
+from pygame.sprite import Group
 
 from settings import Settings
 from ship import Ship
@@ -17,12 +18,21 @@ def run_game():
     
     # Creating a ship
     ship = Ship(ai_settings, screen)
-    
+    # Make a group to store bullets in.
+    bullets = Group()
+
     # Start the main loop for the game.
     while True:
         # Watch for keyboard and mouse events.
-        gf.check_events(ship)
+        gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        gf.update_screen(ai_settings, screen, ship)
+        gf.update_bullets(bullets)
+        gf.update_screen(ai_settings, screen, ship, bullets)
 
+        # Get rid of bullets that have disappeared
+        for bullet in bullets.copy():
+            if bullet.rect.bottom <= 0:
+                bullets.remove(bullet)
+        print(len(bullets))
+                
 run_game()
