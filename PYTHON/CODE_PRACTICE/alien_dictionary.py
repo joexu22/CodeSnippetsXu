@@ -9,8 +9,8 @@ alien_2 = {'color': 'red', 'points': 15}
 aliens = [alien_0, alien_1, alien_2]
 
 for alien in aliens:
-	print(alien['color'])
-	print(alien['points'])
+    print(alien['color'])
+    print(alien['points'])
 
 
 # operating on alien_0 data
@@ -51,11 +51,11 @@ print("Original x-position: " + str(alien_0['x_position']))
 # moving the alien to the right
 # determine how far the alien moves based on its current speed
 if alien_0['speed'] == 'slow':
-	x_increment = 1
+    x_increment = 1
 elif alien_0['speed'] == 'medium':
-	x_increment = 2
+    x_increment = 2
 else:
-	x_increment = 3
+    x_increment = 3
 
 
 # the new position is the old position plus the increment
@@ -75,27 +75,27 @@ print(alien_0)
 print("\ncreating a mass of aliens!:".title())
 aliens = []
 for alien_number in range(30):
-	new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
-	aliens.append(new_alien)
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
 
 
 # changing up some of the aliens
 for alien in aliens[0:3]:
-	if alien['color'] == 'green':
-		alien['color'] = 'yellow'
-		alien['speed'] = 'medium'
-		alien['points'] = 10
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
 
 for alien in aliens[0:1]:
-	if alien['color'] == 'yellow':
-		alien['color'] = 'red'
-		alien['speed'] = 'fast'
-		alien['points'] = 15
+    if alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
 
-	
+
 # showing first 5 aliens
 for alien in aliens[:5]:
-	print(alien)
+    print(alien)
 print("...")
 
 
