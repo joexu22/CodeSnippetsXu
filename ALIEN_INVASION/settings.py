@@ -1,8 +1,9 @@
 # settings for alien invasion game
 
-class Settings():
+
+class Settings:
     """A class to store all settings for Alien Invasion."""
-    
+
     def __init__(self):
         """Initialize the game's settings."""
         # Screen settings
@@ -18,4 +19,5 @@ class Settings():
         self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = 60, 60, 60
-        self.bullets_allowed = 50 # keeping this high for testing
+        self.bullets_allowed = 50  # keeping this high for testing
+

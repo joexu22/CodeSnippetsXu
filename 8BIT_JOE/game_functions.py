@@ -1,6 +1,7 @@
 import sys
 import pygame
 
+
 def check_keydown_events(event, chracter):
     """Respond to keypresses."""
     # moving the chracter with keypresses
@@ -12,6 +13,7 @@ def check_keydown_events(event, chracter):
         chracter.moving_left = True
     if event.key == pygame.K_RIGHT:
         chracter.moving_right = True
+
 
 def check_keyup_events(event, chracter):
     """Respond to key releases."""
@@ -25,13 +27,14 @@ def check_keyup_events(event, chracter):
     if event.key == pygame.K_RIGHT:
         chracter.moving_right = False
 
+
 def check_events(chracter):
     """Respond to keypresses and mouse events"""
     for event in pygame.event.get():
         # checking for quit command
         if event.type == pygame.QUIT:
             sys.exit()
-        
+
         # checking for key presses
         elif event.type == pygame.KEYDOWN:
             check_keydown_events(event, chracter)
@@ -45,6 +48,6 @@ def update_screen(ai_settings, screen, chracter):
     # Redraw the screen
     screen.fill(ai_settings.bg_color)
     chracter.blitme()
-    
+
     # Make the most recent drawn screen visible
     pygame.display.flip()

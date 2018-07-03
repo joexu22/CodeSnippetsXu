@@ -8,14 +8,16 @@ from ship import Ship
 
 import game_functions as gf
 
+
 def run_game():
     # Initialize game and create a screen object.
     pygame.init()
     ai_settings = Settings()
     screen = pygame.display.set_mode(
-        (ai_settings.screen_width, ai_settings.screen_height))
+        (ai_settings.screen_width, ai_settings.screen_height)
+    )
     pygame.display.set_caption("Alien Invasion")
-    
+
     # Creating a ship
     ship = Ship(ai_settings, screen)
     # Make a group to store bullets in.
@@ -34,5 +36,6 @@ def run_game():
             if bullet.rect.bottom <= 0:
                 bullets.remove(bullet)
         print(len(bullets))
-                
+
+
 run_game()
