@@ -262,3 +262,6 @@ paket-files/
 
 # Tensor Flow
 TENSORFLOW/output/
+
+# Java Class Files
+*.class
