@@ -1,4 +1,5 @@
 public class BeerSong {
+    // TODO: look into event driven programming
     public static void main(String[] args) {
         int beerNum = 99;
         String word = "bottles";
@@ -16,7 +17,8 @@ public class BeerSong {
 
             beerNum = beerNum - 1;
             if (beerNum == 1) {
-                word = "bottle"; // This part of the code is repeated, come up with solution that doesn't repeat this
+                word = "bottle"; // This part of the code is repeated, come up with solution that doesn't repeat
+                                 // this
             }
 
             if (beerNum > 0) {

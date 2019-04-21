@@ -1,0 +1,3 @@
+# Basic Notes
+* compiles with "gfortan" command
+* kinda like C with a.out files...

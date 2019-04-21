@@ -12,4 +12,11 @@ class Settings:
         self.bg_color = (230, 230, 230)
 
         # Ship settings
-        self.ship_speed_factor = 1.5
+        self.ship_character_factor = 1.5
+
+        # Fireball settings
+        self.fireball_speed_factor = 1.0
+        self.fireball_width = 15
+        self.fireball_height = 3
+        self.fireball_color = 60, 60, 60
+        self.fireballs_allowed = 3

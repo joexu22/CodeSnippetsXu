@@ -1,5 +1,7 @@
 # A Quick Pygame Implementation
-TODO:
-need to add in ability to fire fireballs
-include different levels and backgrounds
-maybe enemies
+# TODO:
+* Cast fireballs sideways
+* Moving enemies
+* Better 8bit art
+* Randomized Star Background
+* Sound Effects
