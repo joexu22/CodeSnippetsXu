@@ -1,0 +1,40 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Transition",
+			"request": "launch",
+			"mainClass": "Transition"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - RandomSurfer",
+			"request": "launch",
+			"mainClass": "RandomSurfer"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - RunnableTest",
+			"request": "launch",
+			"mainClass": "RunnableTest"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - BasicMath",
+			"request": "launch",
+			"mainClass": "BasicMath"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - InsertionSort",
+			"request": "launch",
+			"mainClass": "InsertionSort"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - RandomNumber",
+			"request": "launch",
+			"mainClass": "RandomNumber"
+		}
+	]
+}

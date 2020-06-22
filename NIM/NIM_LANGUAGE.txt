@@ -1,0 +1,7 @@
+# NIM Programming Language
+
+nim compile --gcc.exe:x86_64-w64-mingw32-gcc --gcc.linkerexe:x86_64-w64-mingw32-gcc --cpu:amd64 --os:windows --out:helloworld.exe helloworld.nim
+
+sudo apt install mingw-w64
+
+nim compile <>

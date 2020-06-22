@@ -15,3 +15,6 @@ jdb <Class>
 step
 step into
 step over
+
+# Visual Studio Code
+supports running and debugging locally

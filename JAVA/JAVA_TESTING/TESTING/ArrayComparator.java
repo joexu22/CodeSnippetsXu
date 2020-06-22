@@ -67,7 +67,6 @@ class ArrayComparator {
 		testSet.add(newD);   
 		testSet.add(newE);
 	
-		newSet.it
 		for (int[] output : testSet) {
 			System.out.println(Arrays.toString(output));
 		}
