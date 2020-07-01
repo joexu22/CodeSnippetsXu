@@ -2,11 +2,11 @@
 (require rackunit)
 
 (define (make-accumulator base-number)
-  (define (procedure added-value)
-    (set! base-number (+ base-number added-value))
-    base-number
-  )
-  procedure
+	(define (procedure added-value)
+		(set! base-number (+ base-number added-value))
+		base-number
+	)
+  	procedure
 )
 
 (define A (make-accumulator 5))
