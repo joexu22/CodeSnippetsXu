@@ -1,30 +1,37 @@
 #lang racket
 (require rackunit)
 
-(define (prime? n)
-	(= n (smallest-divisor n)))
+(define (square x) (* x x))
 
-(define (smallest-divisor n)
-	(find-divisor n 2))
+(define (expmod base exp m)
+	(cond
+		((= exp 0) 1)
+		((even? exp)
+			(remainder
+				(square (expmod base (/ exp 2) m))
+				m))
+		(else
+			(remainder
+				(* base (expmod base (- exp 1) m))
+				m))))
 
-(define (find-divisor n test-divisor)
-	(cond ((> (square test-divisor) n) n)
-		  ((divides? test-divisor n) test-divisor)
-		  (else (find-divisor n (+ test-divisor 1)))))
+(define (fermat-test n)
+	(define (try-it a)
+		(= (expmod a n n) a))
+	(try-it (+ 1 (random(- n 1)))))
 
-(define (square n)
-	(* n n))
+(define (fast-prime? n times)
+	(cond
+		((= times 0) true)
+		((fermat-test n) (fast-prime? n (- times 1)))
+		(else false)))
 
-(define (divides? a b)
-	(= (remainder b a) 0))
+(check-equal? (expmod  2 7 5) 3 "128 % 5 = 3")
+(check-equal? (expmod  12 0 24) 1 "1 % 24 = 1")
+(check-true (fermat-test 7) "7 is a prime") ;;; it'll always pass
+(check-true (fast-prime? 7 3) "7 is a prime") ;;; it'll always pass
+(check-false (fast-prime? 21 5) "21 is not a prime") ;;; this has probability to fail
 
-;;; (prime? 1)
-;;; (prime? 2)
-;;; (prime? 3)
-;;; (prime? 4)
-;;; (prime? 5)
-;;; (prime? 6)
-;;; (prime? 7)
-;;; (prime? 8)
-;;; (prime? 9)
-;;; (prime? 10)
+;;; Carmichael Number (I've Been Fooled)
+;;; (check-false (fast-prime? 561 10) "561 is not a prime") ;;; this often fails despite 3*187=561
+;;; (check-false (fast-prime? 561 1000000) "561 is not a prime") ;;; this often fails despite 3*187=561
