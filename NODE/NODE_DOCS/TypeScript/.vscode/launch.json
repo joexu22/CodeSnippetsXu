@@ -1,0 +1,16 @@
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "Launch Chrome against localhost",
+			"url": "//wsl$/Ubuntu-20.04/home/urbanjoe22/CodeSnippetsXu/NODE/NODE_DOCS/TypeScript/HelloWeb/helloweb.html",
+			//"url": "\\wsl$\Ubuntu-20.04\home\urbanjoe22\CodeSnippetsXu\NODE\NODE_DOCS\TypeScript\HelloWeb",
+			"webRoot": "${workspaceFolder}"
+		}
+	]
+}
