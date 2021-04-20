@@ -1,6 +1,7 @@
 # Classic Alien Invasion Game
 
 This is the simple, classic alien invasion game that will be implemented using python.
+This project is inspired and directed by "Python Crash Course"
 
 ## Setup (WSL2)
 

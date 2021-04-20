@@ -1,8 +1,9 @@
-# A Quick Pygame Implementation
-# Setup
-* Python3.7.7 is the last working version to use
+# A Quick PyGame Implementation
 
-# TODO:
+## Setup
+* Use the .venv folder
+
+## TODO:
 * Cast fireballs sideways
 * Moving enemies
 * Better 8bit art
