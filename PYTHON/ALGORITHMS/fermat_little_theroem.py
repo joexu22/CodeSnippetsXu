@@ -1,5 +1,5 @@
 import unittest
-        
+
 def generateList(n):
     numberList = []
     for x in range(n):
@@ -19,7 +19,7 @@ def moduloList(n):
     # assert(originalNumbers == moduloList)
     return moduloList;
 
-class TestFeratLittleTheroem(unittest.TestCase):
+class TestFermatLittleTheorem(unittest.TestCase):
     def test_generateList(self):
         TestInput = 9
         TestArray = [0,1,2,3,4,5,6,7,8]
@@ -31,7 +31,7 @@ class TestFeratLittleTheroem(unittest.TestCase):
         TestArrayOutput = [element ** TestInput for element in TestArray]
         # print(TestArrayOutput)
         self.assertEqual(TestArrayOutput, fermat_little_theorem_explorer(9))
-        
+
     def test_moduloList(self):
         TestInputFail = 9
         TestGeneratedFail = generateList(TestInputFail)
