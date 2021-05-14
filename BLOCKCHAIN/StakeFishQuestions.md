@@ -10,7 +10,7 @@ We'd like to know your answer (it doesn't have to be precise) and your approach 
 We can model this problem experimentally.
 
 Some initial parameters we can gather to help us solve this problem:
-	- As of writing, the 'Height' of bitcoin is 683203
+	- As of writing, the 'Height' of bitcoin is 683310
 	- We want to know how often two consecutive blocks are mined 2 hours apart from each other
 
 The most straightforward answer to the initial question will be a ratio between:
@@ -18,7 +18,7 @@ The most straightforward answer to the initial question will be a ratio between:
 	(consecutive blocks mined 2 or more hours apart)/total number of consecutive blocks
 	The percentage is
 
-	XXX/YYY = ZZ%
+	163693/683310 ~= 24%
 
 	The values of these two parameters exists within the block chain and are deduced in the 2nd problem posed...
 
@@ -120,8 +120,8 @@ I got the number up to most recently synced time
 
 Here is the number:
 ```
-Up to Stack YYY:
-XXX blocks where mined 2 hours apart
+Up to Stack 683310:
+163693 blocks where mined 2 hours apart
 ```
 
 As a Follow-up:
