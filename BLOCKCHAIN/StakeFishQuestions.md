@@ -7,22 +7,6 @@ Title: StakeFish Questions
 1. How often does the Bitcoin network see two consecutive blocks mined more than 2 hours apart from each other?
 We'd like to know your answer (it doesn't have to be precise) and your approach towards this solution using probability and statistics.
 
-We can model this problem experimentally.
-
-Some initial parameters we can gather to help us solve this problem:
-	- As of writing, the 'Height' of bitcoin is 683310
-	- We want to know how often two consecutive blocks are mined 2 hours apart from each other
-
-The most straightforward answer to the initial question will be a ratio between:
-	
-	(consecutive blocks mined 2 or more hours apart)/total number of consecutive blocks
-	The percentage is
-
-	163693/683310 ~= 24%
-
-	The values of these two parameters exists within the block chain and are deduced in the 2nd problem posed...
-
-** Additional Notes (Statistics/Research) **
 Through researching this problem, various concept came about:
   - Block Time: in the context of cryptocurrencies, is a measure of the time it takes to produce a new block
   - Difficulty: is a parameter that cryptocurrencies use to keep the average time between blocks steady as the network's hash power changes
@@ -117,12 +101,21 @@ The most straightforward solution is to do a linear parse on the data and track 
 
 I got the number up to most recently synced time
   - (did not want to keep bitcoin-core running all the time/network charges?)
+  - in the [parsed_data_answer](https://github.com/joexu22/CodeSnippetsXu/tree/master/BLOCKCHAIN/parsed_data_answer) folder each file contains a "checkout" that contains 2 values.
+	- these values X, Y mean "up to X stack, Y blocks are timestamped 2 hours apart"
 
-Here is the number:
+Here is the Empirical Findings:
 ```
-Up to Stack 683310:
-163693 blocks where mined 2 hours apart
+Up to Stack 683310,
+163693 blocks where timestamped hours apart
 ```
+
+Conclusions:
+  - I'm actually somewhat surprised at these results, I would of expected a much lesser number
+  - At first I suspected a code error or misunderstanding of what timestamp means, but have a stack number of 683310 as of Early March 2021 reassures me that I not too far off the mark (in that every block I am parsing does indeed have one timestamp)
+  	- I suspect I am missing the connection between mining and validation
+	- Also, I still need to figure out what the "revision" files in the bitcoin-core folder do and how it may be affecting the final tally
+  - Ideally, I would need to confirm my findings and methodology 😉
 
 As a Follow-up:
   - Having done this project. I think a natural follow up would be to actually parse out all the data.
