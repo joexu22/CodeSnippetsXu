@@ -1,10 +1,12 @@
 public class JavaArrayMutation {
-    private int[] testArray = {3, 4, 5};
+    private int[] testArray = {5, 26, 2021};
     
+	// This does not save
     public void increment(int n) {
         n++;
 	}
 	
+	// This saves the number
 	public int set_one_higher(int n) {
 		return ++n;
 	}
@@ -30,6 +32,7 @@ public class JavaArrayMutation {
 			System.out.print(testArray[i] + " ");
 		}
 	}
+
     public static void main(String[] args) {
         JavaArrayMutation A = new JavaArrayMutation();
 		A.firstTestMethod();
