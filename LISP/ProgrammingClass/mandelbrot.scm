@@ -1,0 +1,33 @@
+(define (mandelbrot-iter threshold)
+    (lambda (x y)
+        (define (r-next r s x)
+            (+ (- (* r r) (* s s)) x)
+        )
+        (define (s-next r s y)
+            (+ (* 2 r s) y)
+        )
+        (define (iter x y r s count)
+            (cond 
+                ((> (+ (* r r) (* s s)) 4) count)
+                ((> count threshold) 0)
+                (else (iter x y (r-next r s x) (s-next r s y) (+ count 1)))
+            )
+        )
+        (iter x y 0.0 0.0 0)
+    )
+)
+
+;(tester (- .5) 0 100)
+(inspect (mandelbrot-iter 1000))
+(inspect (define rand-test (mandelbrot-iter 1000)))
+(define rand-test (mandelbrot-iter 1000))
+(inspect (rand-test (- .5) 0))
+
+(define mandelbrot-tester (mandelbrot-iter 100))
+(if (= (mandelbrot-tester 2 3) 0)
+    (print "point (2,3) is in the Mandelbrot set!\n")
+    (print "point (2,3) is not in the Mandelbrot set.\n")
+    )
+
+(inspect ((mandelbrot-iter 100) .5 .5))
+

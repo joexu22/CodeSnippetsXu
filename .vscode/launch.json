@@ -10,6 +10,20 @@
 		},
 		{
 			"type": "java",
+			"name": "CodeLens (Launch) - JavaArrayMutation",
+			"request": "launch",
+			"mainClass": "JavaArrayMutation",
+			"projectName": "CodeSnippetsXu_979fbc80"
+		},
+		{
+			"type": "java",
+			"name": "CodeLens (Launch) - Tester",
+			"request": "launch",
+			"mainClass": "Tester",
+			"projectName": "CodeSnippetsXu_979fbc80"
+		},
+		{
+			"type": "java",
 			"name": "CodeLens (Launch) - Transition",
 			"request": "launch",
 			"mainClass": "Transition"

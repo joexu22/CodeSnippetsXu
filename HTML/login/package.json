@@ -1,0 +1,26 @@
+{
+	"name": "login-app",
+	"version": "0.0.1",
+	"devDependencies": {
+		"angular": "^1.8.0",
+		"angular-animate": "^1.8.0",
+		"angular-mocks": "^1.8.0",
+		"angular-ui-router": "^1.0.26",
+		"grunt": "^1.2.1",
+		"grunt-concat-sourcemap": "^0.4.3",
+		"grunt-contrib-clean": "^2.0.0",
+		"grunt-contrib-concat": "^1.0.1",
+		"grunt-contrib-connect": "^2.1.0",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-jshint": "^2.1.0",
+		"grunt-contrib-less": "^2.0.0",
+		"grunt-contrib-nodeunit": "^2.1.0",
+		"grunt-contrib-uglify": "^4.0.1",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-html2js": "^0.7.1",
+		"grunt-karma": "^4.0.0",
+		"karma": "^5.1.0",
+		"karma-jasmine": "^3.3.1",
+		"karma-phantomjs-launcher": "^1.0.4"
+	}
+}
