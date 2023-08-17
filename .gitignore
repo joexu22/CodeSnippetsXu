@@ -270,3 +270,6 @@ TENSORFLOW/output/
 
 # Java Class Files
 *.class
+
+# Mac
+.DS_Store
