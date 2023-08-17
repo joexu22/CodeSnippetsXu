@@ -6,4 +6,4 @@ It looks like an era of coding is coming to a pass. LLM aided coding seems to be
 
 ![Cheating?](./LeetcodeScreenshot.png)
 
-This was pretty much done with an LLM. 30 of the 35 mintues was me reading and understanding the problem. It honestly could have been done with just copy/paste. Most students in the future probably just need a class that introduces them to the concept, the implementation will be left to the AI.
+This was pretty much done with an LLM. 30 of the 35 minutes was me reading and understanding the problem. It honestly could have been done with just copy/paste. Most students in the future probably just need a class that introduces the algorithmic concepts, while the implementation will be left to the AI.
