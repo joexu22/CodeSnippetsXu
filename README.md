@@ -1,62 +1,67 @@
 # Various Code Snippets
 
-Here is a repo that I keep all the "useless" code snippets I had the time to document
-It has been eight years since I have first started coding
-I am still on the path to become a Professional Software Engineer (I'm taking my time)
+A personal archive of code snippets I bothered to document — part cookbook, part scratch pad, part memory tool.
 
-- This repo is somewhat of a personal "Code Cookbook"
-- This reope will contain various programming notes throughout my career 
+I first started coding more than a decade ago. I am still on the path to becoming a professional software engineer (I'm taking my time). This repo has sat quiet for stretches; the point of this refresh is not to pretend every folder is production-ready, but to keep the *idea* of the archive honest for today.
 
-Tasks
-- TODO: Archive Old Code from College Days
-- TODO: Prune/Refactor The Code
+**As of 2026:** AI has, in a practical sense, "solved" a lot of day-to-day coding — generating, rewriting, and shipping code is faster than it has ever been. That does not make programming languages or the practice of coding obsolete. Languages, algorithms, systems thinking, and the act of writing and reading code are still *practice*: skill you build by doing, not only by prompting. This repo remains a place for that practice.
 
-## My Own Code - Essay
+- Personal "Code Cookbook"
+- Programming notes and experiments across a career
+- Scratch work to keep the rust off — still useful even when models can write the first draft
+
+## Tasks
+
+- TODO: Archive old code from college days
+- TODO: Prune / refactor the code
+- TODO: Keep notes current as tools and AI change how we work
+
+## My Own Code — Essay
 
 What is the value of the code I write?
 
-"To write good code, one must first write bad code", *Some Programmer I Respect*
+> "To write good code, one must first write bad code." — *Some Programmer I Respect*
 
-"ABC - 'Always Be Coding'", *Random Programmers*
+> "ABC — Always Be Coding." — *Random Programmers*
 
-- I undestand that much of the work here id derivative (much of the code here have been taken from much more elegant solutions)
-- Most of the code here serves as scratch work (helps get the rust off)
-- The repo itself is a memory tool
-- I can potentially write APIs for the algorithms that I come up with here, create a library where I can access code from anywhere (Solution: Docker Containers that executes from anywhere)
+- I understand that much of the work here is derivative (a lot of it comes from more elegant solutions elsewhere).
+- Most of the code here is scratch work — it helps get the rust off.
+- The repo itself is a memory tool.
+- I can potentially turn algorithms here into reusable pieces later (e.g. small libraries or containers runnable from anywhere).
 
-## My Career As A Hack
+AI can produce polished snippets on demand. The value of *this* pile is different: it is a record of how I learned, what I tried, and what still feels worth practicing by hand.
 
-I acknowledge that much of the work I have done as a younger programmer, was done as a hack. I was at a point a novice, who is just trying thins for the hell of it. Much of my work is a compilation of hacks. Thus, I can comfortaly call myself a hackjob.
-job.
+## My Career as a Hack
 
-- I still have a feeling that much of the work was wrought with an investment of blood, sweet, and tears...
-- Overdramatized (for sure), but I do think that CS can get somewhat mentally challenging.
+I acknowledge that much of the work I did as a younger programmer was done as a hack. I was a novice trying things for the hell of it. A lot of my work is a compilation of hacks. I can comfortably call myself a hackjob.
 
-I hope that this codebase is a good starting point for future work down the road.
+- Much of it was still wrought with blood, sweat, and tears…
+- Overdramatized (for sure), but CS can get mentally challenging.
+
+I hope this codebase remains a decent starting point — and a reminder that messy practice still counts.
 
 ## Motivations
 
-The motivation for any type of project like this is to create an archival system. The reason is as simple as me wanting to same time and energy recalling various code snippets.
+The motivation for a project like this is archival: save time and energy when recalling snippets later.
 
-- I am resigned to the fact that my memory and ability will dull over the years - hopefully this project will buffer the decline when I am on the downslope
+- Memory and ability dull over the years — hopefully this project buffers the decline on the downslope.
+- I do not want the time invested in coding to go to waste.
+- Even if AI writes more of the code, I still want a personal trail of *how* I think in code.
 
-- I do not want to time I have invested into coding to go to waste
+## Personal Account / Philosophy on Valuing Time
 
-## Personal Account/Philosophy on Valuing Time
+I acknowledge that if I were to really treasure every moment of my life, I would act awfully like a fool…  
+Yet I recall the first forays I took into CS — the memories are still vivid. Understanding Linux and Bash was intimidating; it was really different from Windows/Mac. I have since adapted. Those first steps (the code I was writing back then) still inform my career and life. I made a poor attempt at documenting the work I did then.
 
-I acknowledge that if I were to really treasure every moment of my life, I would act awfully like a fool...
-Yet, I recall the first forays I took into the world of CS - the memories are quite vivid.
-Understanding Linux and Bash was quite intimidating... it was really different from Windows/Mac. I have since adapted. Those first steps (the code I was writing back then) surely informs my career/life. I will have to say that I made a poor attempt at documenting the work I did.
-
-So this repo, is an attempt at capturing my work as a programmer. The catch and paradox of this approach: By valuing the present moment, I may start seeing the tree before noticing the forest. Rather, I fear I will pay attention to only the road-signs rather than the scenery.
+So this repo is an attempt at capturing my work as a programmer. The catch and paradox: by valuing the present moment, I may start seeing the tree before the forest. I fear I will pay attention only to the road signs rather than the scenery.
 
 ## The Role of Celebration
 
-I remember my initial hesitancy towards "coding"... there was so much to learn and so many approaches to take that it was quite overwhelming. I thought that getting started with always a struggle. I consider myself have suffered from a form of paralysis.
+I remember my initial hesitancy toward "coding" — so much to learn, so many approaches, easy to get overwhelmed. Getting started always felt like a struggle. I consider myself to have suffered from a form of paralysis.
 
-I tend to suffer from paralysis - A major issues: not knowing the best way to approach code.
-Analyzing this on some levels, I believe that the best way to approach paralysis is "celebration"...
+A major issue: not knowing the best way to approach code.  
+On some level, I believe the best way to approach paralysis is *celebration*.
 
-- On an abstract level this idea connects to historical reasons as to why people party/celebrate.
-- I am personally able to wrap up (to completion) my previous work by celebrating my accomplishments.
-- This act opens up the way for future endeavors.
+- On an abstract level this connects to why people party and celebrate historically.
+- Celebrating finished work lets me close a chapter and open the next.
+- That act clears the way for future endeavors — including practice that AI cannot replace for me: judgment, taste, and the muscle memory of real languages.
